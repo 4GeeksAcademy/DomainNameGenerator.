@@ -1,18 +1,10 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
-
 let button = document.querySelector("#domain");
-let container = document.querySelector("#container");
+let domainHeader = document.querySelector("#domain-header");
 let NamesDom = [];
 
 button.addEventListener("click", function() {
   let randomDomain = NamesDom[Math.floor(Math.random() * NamesDom.length)];
-
-  let newH1 = document.createElement("h1");
-  newH1.innerText = randomDomain;
-
-  container.appendChild(newH1);
+  domainHeader.innerText = randomDomain;
 });
 
 let articles = ["the", "our", "an", "Some"];
